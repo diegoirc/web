@@ -1,15 +1,17 @@
 body {
-	font-family: sans-serif;
 	color: #333;
 	font-size: 1.2rem;
 	line-height: 1.6em;
 	margin: 0;
+	background: #B8B8B8;
 }
 
 
 p {
 	margin-bottom: 1.4em;
 	text-align: center;
+	font-size: 1.2em;
+
 }
 
 .container {
@@ -21,7 +23,7 @@ p {
 
 
 .header {
-	background: #333;
+	background: black;
 	color: white;
 	padding: 2rem 0;
 	position: fixed;
@@ -45,8 +47,7 @@ p {
 
 .logo{
 
-	letter-spacing: 15px;
-	font-size: 1.2em;
+	width: 200px;
 }
 
 .menu-icon{
@@ -71,7 +72,7 @@ p {
 		}
 
 			.navigation ul li a:hover{
-				background: #4C4C4C;
+				background: #2f602a;
 
 			}
 
@@ -81,15 +82,73 @@ p {
 }			
 
 
+/* boton neon margin 40 para que no este muy junto al texto superior, el padding para tener ese ancho  y alto */
+/* espacio entre letras de 4px sin subrayado */
+
+
+.bt-neon{
+	margin-top: 50px;
+	margin-left: 310px;
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	color: #272727;
+	letter-spacing: 4px;
+	font-size: 1.5em;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+/* decoracion para al pasar el mouse por encima del botton se haga neon  */
+
+.bt-neon:hover{
+	font-size: 1.5em;
+	background: #fff;
+	box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+	border-radius: 40px;
+
+}
+
+
+
 .footer{
-	background: #f2f2f2;
-	padding: 4rem 0;
+	background: black;
+	padding: 1rem;
 	text-align: center;
 	margin-top: 6rem;
+	color: white;
+	font-size: 0.6em;
 }			
 
+.footer-text{
+	margin-left: 35px;
+}
 
 @media screen and (max-width: 767px) {
+
+.bt-neon{
+	margin-top: 50px;
+	margin-left: 70px;
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	color: #272727;
+	letter-spacing: 4px;
+	font-size: 0.8em;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.bt-neon:hover{
+	font-size: 1em;
+	background: #fff;
+	box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+	border-radius: 40px;
+
+}
+
 
 .menu-icon{
 	display: block;
